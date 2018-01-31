@@ -19,5 +19,4 @@ for row in attachmentResult:
     attachmentString = ' - Attachment: [' + row[2] + '|https://s3-us-west-2.amazonaws.com/eplan-jira/attachments/' + row[2] + ']'
     c.execute("update ticket set description =description || ? where id=?", (attachmentString,row[1]))
 
-
 conn.close()
