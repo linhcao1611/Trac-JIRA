@@ -6,7 +6,6 @@ ticketIdArray = []
 revisionArray = []
 
 
-ticketResult = c.execute("select * from ticket")
 attachmentResult = list(c.execute("select * from attachment order by id"))
 
 # ticket: id, type, time, changetime, component, severity, priority, owner, reporter, cc,
